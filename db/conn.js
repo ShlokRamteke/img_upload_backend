@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
-const DB =
-  "mongodb+srv://kodame:Kodame2200@cluster0.rox7cru.mongodb.net/ImgUpload?retryWrites=true&w=majority";
+const DB =process.env.DATABASE;
 
 mongoose
   .connect(DB, {
